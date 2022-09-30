@@ -1,0 +1,5 @@
+pydantic==1.10.2
+tui-colorlib==1.0.4
+beautifulsoup4
+decorator
+requests
