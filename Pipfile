@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+python-wiki-cli = {path = ".", editable = true, extras = ["dev"]}
+
+[packages]
+python-wiki-cli = {path = ".", editable = true}
+
+[scripts]
+test = "pytest tests/"
+lint = "flake8 . && pylint ."
+format = "black ."
+coverage = "pytest --cov=htmlcov tests/ && python -m http.server --directory htmlcov/"
+
+[requries]
+python_version = "3.11"

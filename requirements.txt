@@ -1,5 +1,6 @@
-pydantic==1.10.2
-tui-colorlib==1.0.4
+pydantic
+tui-colorlib
 beautifulsoup4
 decorator
 requests
+textual
